@@ -1,0 +1,23 @@
+{
+  "name": "ac_cypress_t_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanifs/ac_cypress_t_automation.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanifs/ac_cypress_t_automation/issues"
+  },
+  "homepage": "https://github.com/hanifs/ac_cypress_t_automation#readme",
+  "dependencies": {
+    "cypress": "^12.17.3"
+  }
+}
