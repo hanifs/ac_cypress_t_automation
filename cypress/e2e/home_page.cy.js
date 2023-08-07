@@ -26,7 +26,6 @@ describe('Home Page Header Navigation Menu Test Suite', () => {
 
     it(" Anchor tags should not have udefined value", () => {
         cy.contains("a", "#").should("not.have.attr", "href", "#undefined");
-        })
     })
 
     it("Verify Home button text and clicking redirects to home page", () => {
@@ -88,7 +87,7 @@ describe('Home Page Header Navigation Menu Test Suite', () => {
         .contains('Contact Us').click()
         cy.url().should('eq', 'https://appcoderz.com/get-free-analysis/')
     })
-
+})
 describe('Page Title and Links in Home Page', () => {
     beforeEach(() => {
         cy.visit('https://appcoderz.com')
@@ -98,10 +97,9 @@ describe('Page Title and Links in Home Page', () => {
         cy.title().should('include', 'App Coderz - We Provide A Splendid One - Stop Solution')
     })
 
-    //   it('check all links of Home page', () => {
-    //     cy.get('a').each(page => {
-    //       cy.request(page.prop('href'))
-    //     })
-    //   })
-});
-
+    it('check all links of Home page', () => {
+        cy.get('a').each(page => {
+        cy.request(page.prop('href'))
+        })
+    })
+})
